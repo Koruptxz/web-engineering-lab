@@ -1,0 +1,229 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Times New Roman", Times, serif;
+}
+
+/* Task 1 */
+#box {
+  background-color: blue;
+  color: white;
+  width: 120px;
+  padding: 12px;
+  margin: 10px;
+}
+
+.heading {
+  color: red;
+}
+
+.btn-external {
+  background-color: green;
+  color: white;
+}
+
+/* Task 2 */
+.centered-heading {
+  text-align: center;
+  text-transform: capitalize;
+}
+
+/* Task 3 */
+.outer {
+  /* 25px = 1.5625rem; 10px = 0.625rem */
+  font-size: 1.5625rem;
+}
+
+.inner {
+  /* em uses the parent font size; rem uses the root font size */
+  font-size: 0.625rem;
+}
+
+/* Task 4 */
+.navbar {
+  height: 60px;
+  background-color: #0f1111;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  gap: 20px;
+}
+
+.logo {
+  color: #f08804;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  flex: 1;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.search-box input {
+  padding: 6px 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.search-btn {
+  background-color: #f08804;
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Task 5 */
+header,
+footer {
+  padding: 18px;
+  background: #eee;
+  text-align: center;
+}
+
+.content-area {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.t5-box {
+  width: 100px;
+  height: 100px;
+  border: 2px solid #000;
+  margin: 10px 0;
+}
+
+.box1 {
+  background-color: rgba(255, 255, 0, 0.5);
+}
+
+.box2 {
+  background-color: rgba(0, 255, 255, 0.5);
+}
+
+.box3 {
+  background-color: rgba(255, 0, 255, 0.5);
+  border-radius: 50%;
+}
+
+/* Task 6 */
+.love-nature {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  width: 180px;
+  height: 120px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 12px;
+  color: #fff;
+  font-weight: bold;
+  background-image: url("milad-fakurian-iAIXs0vI-uM-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  border: 1px solid #000;
+}
+
+/* Task 7 */
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  background-color: #ddd;
+}
+
+.flex-item {
+  align-self: center;
+}
+
+/* Task 8 */
+.media-box {
+  height: 50px;
+  background-color: green;
+  color: white;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 300px) {
+  .media-box {
+    background-color: pink;
+    color: black;
+  }
+}
+
+@media (min-width: 400px) {
+  .media-box {
+    background-color: red;
+    color: white;
+  }
+}
+
+@media (min-width: 600px) {
+  .media-box {
+    background-color: blue;
+  }
+}
+
+/* Task 9 */
+.hover-btn {
+  margin: 20px 0;
+  padding: 10px 16px;
+  transition:
+    transform 0.3s ease,
+    font-size 0.3s ease;
+}
+
+.hover-btn:hover {
+  font-size: 1.5rem;
+  transform: rotate(15deg);
+}
+
+/* Task 10 */
+.loader {
+  width: 50px;
+  height: 50px;
+  border: 5px solid rgba(0, 0, 0, 0.1);
+  border-top-color: #333;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-top: 20px;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
