@@ -1,0 +1,20 @@
+Project Name:
+->Node Module/
+->Public
+->Test
+->Read.ME
+->Package.json
+->Package.lock.json
+
+Package.json:
+->Project Information
+->dependencies
+->Development dependencies
+->Scripts
+
+
+
+node --version,npn --version, code --version and git --version
+Create a repository named web-engineering-lab
+Create the project layout (public/.tests/.ReadME.md inside a folder named Web-engineering-lab initialized with npm init -y
+install eslint, prettier and server as development dependenciees and add list format and start scripts to package.json
