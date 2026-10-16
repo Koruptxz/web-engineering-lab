@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bio Page</title>
-    <!-- CSS required for Task 8[cite: 2] -->
     <style>
       .skip-link {
         position: absolute;
@@ -35,9 +34,12 @@
       <h1 id="greeting">Tayyab Tariq</h1>
       <nav>
         <ul>
-          <!-- aria-current required for Task 9[cite: 2] -->
-          <li><a href="#schedule" aria-current="location">Office Hours</a></li>
-          <li><a href="#feedback">Send Feedback</a></li>
+          <li>
+            <a href="#schedule" class="nav-link" aria-current="location"
+              >Office Hours</a
+            >
+          </li>
+          <li><a href="#feedback" class="nav-link">Send Feedback</a></li>
         </ul>
       </nav>
     </header>
@@ -123,7 +125,6 @@
         </dd>
       </dl>
 
-      <!-- Task 3: Office Hours Table[cite: 2] -->
       <section id="schedule">
         <h2>Office Hours</h2>
         <table>
@@ -168,7 +169,6 @@
           </tbody>
         </table>
 
-        <!-- Task 4: Informative SVG[cite: 2] -->
         <figure>
           <svg role="img" aria-labelledby="pin-title" width="24" height="24">
             <title id="pin-title">Location pin</title>
@@ -178,12 +178,10 @@
         </figure>
       </section>
 
-      <!-- Task 4: Decorative Divider[cite: 2] -->
       <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24">
         <circle cx="12" cy="12" r="3" fill="#0b3d91" />
       </svg>
 
-      <!-- Tasks 5, 6, and 7: Accessible Form[cite: 2] -->
       <section id="feedback">
         <h2>Send Feedback</h2>
         <form>
