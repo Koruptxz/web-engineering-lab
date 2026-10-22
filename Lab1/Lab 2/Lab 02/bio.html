@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bio Page</title>
+    <style>
+      .skip-link {
+        position: absolute;
+        left: 16px;
+        top: -60px;
+      }
+      .skip-link:focus {
+        top: 14px;
+      }
+      a:focus-visible,
+      button:focus-visible,
+      input:focus-visible,
+      textarea:focus-visible {
+        outline: 3px solid #0b5fff;
+        outline-offset: 2px;
+      }
+      nav a {
+        display: inline-block;
+        padding: 12px 8px;
+        margin-bottom: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="site-header">
+      <h1 id="greeting">Tayyab Tariq</h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="#schedule" class="nav-link" aria-current="location"
+              >Office Hours</a
+            >
+          </li>
+          <li><a href="#feedback" class="nav-link">Send Feedback</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <p>I like surfing the internet.</p>
+
+      <ul>
+        <li>Configuring Linux desktop environments</li>
+        <li>Playing video games</li>
+        <li>Embedded programming</li>
+        <li>Analyzing network topologies</li>
+      </ul>
+
+      <ol>
+        <li>C++</li>
+        <li>Python</li>
+        <li>SQL</li>
+      </ol>
+
+      <a href="https://youtube.com/">YouTube</a>
+      <br />
+      <img src="2.jpg" alt="Profile placeholder image" width="200" />
+
+      <h2>Recent Projects</h2>
+      <table border="1">
+        <tr>
+          <th>Project Name</th>
+          <th>Description</th>
+          <th>Technology Used</th>
+          <th>Completion Semester</th>
+        </tr>
+        <tr>
+          <td>Squares TD</td>
+          <td>2D top-down tower defense game</td>
+          <td>C++, Win32 API</td>
+          <td>Semester 2</td>
+        </tr>
+        <tr>
+          <td>Graphical Tic-Tac-Toe</td>
+          <td>Interactive graphical application</td>
+          <td>C++</td>
+          <td>Semester 2</td>
+        </tr>
+        <tr>
+          <td>Personal Portfolio</td>
+          <td>Dynamic portfolio website</td>
+          <td>Next.js, Cloudflare, Vercel</td>
+          <td>Semester 3</td>
+        </tr>
+        <tr>
+          <td>JSON Formatter</td>
+          <td>Web utility hub mini-applet</td>
+          <td>Next.js, Shadcn UI</td>
+          <td>Semester 3</td>
+        </tr>
+      </table>
+
+      <h2>Education</h2>
+      <ol>
+        <li>
+          Bachelor of Computer Science - Sir Syed CASE Institute of Technology
+        </li>
+      </ol>
+
+      <h2>Skills</h2>
+      <dl>
+        <dt>Database Management</dt>
+        <dd>
+          Designing relational schemas and writing complex queries in MySQL and
+          Oracle.
+        </dd>
+
+        <dt>Networking</dt>
+        <dd>
+          Configuring topologies, subnets, and routing protocols using Cisco
+          Packet Tracer.
+        </dd>
+
+        <dt>Systems Architecture</dt>
+        <dd>
+          Practicing x86-64 assembly language and manual memory management.
+        </dd>
+      </dl>
+
+      <section id="schedule">
+        <h2>Office Hours</h2>
+        <table>
+          <caption>
+            Weekly office hours
+          </caption>
+          <thead>
+            <tr>
+              <th scope="col">Day</th>
+              <th scope="col">Time</th>
+              <th scope="col">Instructor</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Monday</td>
+              <td>
+                <time datetime="10:00">10:00</time>-<time datetime="11:00"
+                  >11:00</time
+                >
+              </td>
+              <td>Lab Engineer</td>
+            </tr>
+            <tr>
+              <td>Wednesday</td>
+              <td>
+                <time datetime="14:00">14:00</time>-<time datetime="15:00"
+                  >15:00</time
+                >
+              </td>
+              <td>Course Instructor</td>
+            </tr>
+            <tr>
+              <td>Friday</td>
+              <td>
+                <time datetime="09:00">09:00</time>-<time datetime="10:00"
+                  >10:00</time
+                >
+              </td>
+              <td>Lab Engineer</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <figure>
+          <svg role="img" aria-labelledby="pin-title" width="24" height="24">
+            <title id="pin-title">Location pin</title>
+            <circle cx="12" cy="12" r="10" fill="#000" />
+          </svg>
+          <figcaption>All office hours are held in Room 214.</figcaption>
+        </figure>
+      </section>
+
+      <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="3" fill="#0b3d91" />
+      </svg>
+
+      <section id="feedback">
+        <h2>Send Feedback</h2>
+        <form>
+          <div>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+
+          <div>
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              aria-describedby="email-hint"
+            />
+            <span id="email-hint">We will only use this to reply to you.</span>
+          </div>
+
+          <fieldset>
+            <legend>Topic</legend>
+            <label>
+              <input type="radio" name="topic" value="lab" checked /> Lab
+              content
+            </label>
+            <label>
+              <input type="radio" name="topic" value="other" /> Something else
+            </label>
+          </fieldset>
+
+          <div>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+
+          <button type="submit">Send feedback</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <address>
+        <h2>Contact Me</h2>
+        <p><a href="mailto:tayyabtrq@example.com">tayyabtrq@example.com</a></p>
+        <a href="https://linkedin.com/in/tayyabtrq">LinkedIn Profile</a>
+      </address>
+    </footer>
+  </body>
+</html>

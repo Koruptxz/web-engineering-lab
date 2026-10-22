@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab 04</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+    <!-- Task 8: Load main.js as an ES module -->
+    <script type="module" src="main.js"></script>
+
+    <style>
+      .btn-internal {
+        background-color: blue;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Task 1: header is styled as a flex container in CSS -->
+    <header>
+      <h1>Lab 04</h1>
+      <!-- Task 2: nav ul is styled as a flex row in CSS -->
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Task 4: #schedule is a two-column grid in CSS -->
+      <section id="schedule">
+        <!-- Task 4: Added the .span-all utility so the heading spans both columns -->
+        <h2 class="span-all">Office Hours</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Day</th>
+              <th>Time</th>
+              <!-- Task 7: Added the "Book" column -->
+              <th scope="col">Book</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Monday</td>
+              <td>10:00 AM</td>
+              <td>
+                <!-- Task 7: Added data-day button -->
+                <button
+                  type="button"
+                  data-day="Monday"
+                  aria-label="Select Monday"
+                >
+                  Select
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <!-- Task 3: figure is styled as a flex container in CSS -->
+        <figure>
+          <img src="2.jpg" alt="Location" />
+          <figcaption>Room 101</figcaption>
+        </figure>
+        <!-- Task 7: Added the role="status" paragraph -->
+        <p id="status" role="status" class="span-all text-muted"></p>
+      </section>
+
+      <!-- Task 5: form is a two-column grid in CSS -->
+      <form>
+        <label>Name: <input type="text" /></label>
+        <label>Email: <input type="email" /></label>
+        <!-- Task 5: fieldset spanning the full width -->
+        <fieldset class="span-all">
+          <legend>Topic</legend>
+          <label><input type="radio" name="topic" value="a" /> A</label>
+        </fieldset>
+        <!-- Task 5: message paragraph/label spanning the full width -->
+        <label for="message-field" class="span-all">Message:</label>
+        <!-- Task 5: textarea spanning the full width -->
+        <textarea id="message-field" class="span-all"></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </main>
+
+    <hr style="margin: 4rem 0; border: 1px solid #ccc" />
+  </body>
+</html>
