@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab 05</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="main.js"></script>
+    <script type="module" src="feedback.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Lab 05</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="schedule">
+        <h2 class="span-all">Office Hours</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Day</th>
+              <th>Time</th>
+              <th scope="col">Book</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Monday</td>
+              <td>10:00 AM</td>
+              <td>
+                <button
+                  type="button"
+                  data-day="Monday"
+                  aria-label="Select Monday"
+                >
+                  Select
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <figure>
+          <img src="2.jpg" alt="Location" />
+          <figcaption>Room 101</figcaption>
+        </figure>
+        <p id="status" role="status" class="span-all text-muted"></p>
+      </section>
+
+      <form novalidate>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" />
+
+        <fieldset class="span-all">
+          <legend>Topic</legend>
+          <label><input type="radio" name="topic" value="a" /> A</label>
+        </fieldset>
+
+        <label for="message-field" class="span-all">Message:</label>
+        <textarea id="message-field" class="span-all"></textarea>
+
+        <button type="submit">Send</button>
+      </form>
+    </main>
+  </body>
+</html>
